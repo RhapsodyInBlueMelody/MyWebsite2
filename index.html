@@ -14,14 +14,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header-animation px-5 py-3 text-center d-flex align-items-center" style="font-weight: bold;" id="main-header">
-    <a href="#home" style="text-decoration: none" class="text-start flex-grow-1 bd-highlight">FAIZCAN</a>
-    <nav class="d-flex">
-      <div class="px-5">
-        <a href="#about">About</a>
-      </div>
-      <div class="px-5">
-        <a href="#portofolio">My Portofolio</a>
+  <header class="header-animation px-3 py-3  px-lg-5 py-lg-3 text-lg-center d-flex align-items-start  align-items-lg-center" style="font-weight: bold;" id="main-header">
+    <nav class="navbar navbar-expand-lg d-flex">
+    <a href="#home" style="text-decoration: none" class="navbar-brand text-start flex-grow-lg-1 bd-highlight">FAIZCAN</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse px-5" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portofolio">My Portofolio</a>
+          </li>
+        </ul>
+        <ul class="navbar-list list-unstyled">
+          <li class="nav-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portofolio">My Portofolio</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -29,23 +44,23 @@
   <div class="container mb-5">
   <div class="position-relative mb-5" id="home">
     <!--My Name Image-->
-  <div>
+  <div class="d-none d-md-block">
     <img class="fade-in-image img-fluid" src="images/FaizCanText .png" alt="FaizCan Text Image">
   </div>
   <!--My Name Image End-->
   <!--Kafka Image-->
-  <div class="rio position-absolute translate-middle-y">
+  <div class="rio position-absolute translate-middle-y d-none d-md-block">
     <img src="images/kafka.png" alt="rio image" width="1280" height="720">
   </div>
   <!--Kafka Image End-->
   <!--Nickname-->
-  <div class="overlay-text">
+  <div class="overlay-text d-block">
     FAIZ<span class="mx-2 bg-light" style="color:#087E8B">파이즈</span>
     <p class="py-2">CANIGGIA</p>
   </div>
   <!--Nickname End-->
   <!--Name Card-->
-  <div class="overlay-object rounded d-block mx-auto p-3">
+  <div class="overlay-object rounded d-none d-lg-block d-block mx-auto p-3">
     <img src="images/foto.png" alt="myphoto" class="d-block rounded-circle photo m-3" width="152px">
     <div class="d-flex container mx-auto ">
       <div class="mx-auto row align-items-center">
@@ -57,27 +72,29 @@
     </div>
   </div>
   <!--Name Card End-->
-  <!--Home Page End-->
+  <!--Home Page-->
 
-  <div class="trivia position-absolute translate-middle">
+  <div class="trivia position-absolute translate-middle d-none d-lg-block">
     <div class="my-4" style="font-weight: bold">TRIVIA <span class="white-square" style="margin-left: 60px"></span></div>
     <p>I LOVE RETRO, ANIME AND VIDEO GAMES</p>
   </div>
   </div>
   </div>
   <!--Home Page End-->
-  <!--About Me Page End-->
-  <div class="main-page p-5 container" id="about">
+  <!--About Me-->
+  <div class="main-page p-5 container" style="padding-top: 1000px" id="about">
       <div class="row d-flex align-items-strech">
-
     <div class="col-md-2">
-  <h1 style="font-weight: bold;" class="mb-5">About Me <span class="white-square" style="margin-left: 40px;"></span></h1>
+  <h1 style="font-weight: bold;" class="mb-5">About Me<span class="white-square" style="margin-left: 40px;"></span></h1>
   <p>My Name is Syeddinul Faiz Caniggia; <br class="mb-5"> I'm a Student of Pelita Bangsa University; <br class="mb-5"> I'm Indonesian.</p>
     </div>
 
-  <div class="col-md-6 text-wrap mx-auto">
-    <iframe width="480" height="270" src="https://www.youtube.com/embed/OHeH3-2R2nk?si=yD8wTXRIyd0naHc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="col-md-6 text-wrap mx-auto">
+      <div class="embed-responsive embed-responsive-item-16by9">        
+    <iframe class="embed-responsive-item videoYT" src="https://www.youtube.com/embed/OHeH3-2R2nk?si=yD8wTXRIyd0naHc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+</div>
+
 
   <div class="col-md-2 text-wrap">
     <h1 style="font-weight: bold" class="mb-5 text-nowrap">"FaizCan" What is it ? <span class="white-square" style="margin-left: 40px;"></span></h1>

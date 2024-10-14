@@ -205,8 +205,6 @@ nav div a.active {
 }
 
 
-
-
 .overlay-text {
   color: white;
   font-size: 50px;
@@ -274,7 +272,52 @@ nav div a.active {
 }
 
 
-@media screen and (max-width: 1080px) {
-  header
-  
+@media (max-width: 768px) {
+  #main-header {
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 30px;
 }
+.navbar-nav {
+    display: none; /* Hide the default navbar items */
+}
+.navbar-list {
+    display: block; /* Show the list on smaller screens */
+}  
+.overlay-text {
+  color: white;
+  font-size: 50px;
+  left: 50px;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  animation: slide-side 2s ease-in-out;
+}
+
+}
+
+@media (min-width: 991px) {
+  .videoYT{
+    width: 480px;
+    height: 250px;
+  }
+
+.trivia {
+  padding: 0px 420px !important;
+  transform: translateY(500px)
+  animation: slide-trivia 3s ease-in-out;
+}
+
+
+}
+
+
+@media (min-width: 769px){
+  .navbar-list {
+    display: none;
+  }
+}
+
